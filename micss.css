@@ -1,0 +1,17 @@
+.jeje{
+	color: white;
+}
+
+body{
+		    height: 100%;
+			background-image: url('pic2.jpg');
+			background-size: 100% 100%;
+
+		}
+
+		table td p{
+			font-weight: bold;
+		}
+		table tr td p{
+			font-weight: bold;
+		}

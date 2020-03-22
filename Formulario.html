@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="micss.css">
+	<title>Curriculo-Formulario</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+</head>
+<body>
+
+ <center><h1>Curriculum vitae</h1></center>
+ <form action="#" method="post" name="my_form">
+ <table width="100%">
+
+ 		<tr bgcolor="blue" align="left"><th colspan="2" class="jeje">1.Personal Information</th></tr>
+ 		<tr>
+ 			<td align="right"><label><p>First Name</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="first_name" id="first_name" required="required" placeholder="Enter your first name" title="Enter your first name" size="50"><br>
+ 				<small>Enter your first name</small>
+ 			</td>
+ 		</tr>
+
+ 		
+ 		<tr>
+ 			<td align="right"><label><p>Second Name</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="second_name" id="second_name" required="required" placeholder="Enter your second name" title="Enter your second name" size="50"><br>
+ 				<small>Enter your second name</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>First Last Name</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="firstlast_name" id="firstlast_name" required="required" placeholder="Enter your first last name" title="Enter your first last name" size="50"><br>
+ 				<small>Enter your first last name</small>
+ 			</td>
+ 		</tr>
+
+ 		
+ 		<tr>
+ 			<td align="right"><label><p>Second Last Name</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="secondlast_name" id="secondlast_name" required="required" placeholder="Enter your second last name" title="Enter your second last name" size="50"><br>
+ 				<small>Enter your second last name</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Blood type</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="blood1" id="blood1" required="required" placeholder="Enter your blood type" title="Enter your blood type" size="50"><br>
+ 				<small>Enter your blood type</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>DNI</p></label></td>
+
+ 		
+ 			<td>
+ 		<select name="Nationality" id="Nationality" title="Select your Nationality">
+ 			<option value="V" title="Venezolano">V</option>
+ 			<option value="E" title="Extranjero">E</option>
+ 			<option value="J" title="Juridico">J</option>
+ 			<option value="G" title="Gubernamental">G</option>
+ 		</select>
+ 		<input type="number" name="dni" id="dni" title="Enter your DNI" required="required" placeholder="Ex:12.000.000">
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Date of Birth</p></label></td>
+ 			<td>
+ 				
+ 				<input type="date" name="date" id="dateof_birth" title="Enter your Date of Birth" required="required" placeholder="0" max="2020-02-18">
+
+ 			</td>
+ 		</tr>
+
+ 		<td align="right"><label><p>Marital Status</p></label></td>
+ 			<td>
+ 				<label for="mar_statuscasado">Married</label>
+ 				<input type="radio" checked name="Soltero" id="mar_statuscasado" value="2">
+
+ 				<label for="mar_statussoltero">Single</label>
+ 				<input type="radio" name="Soltero" id="mar_statussoltero" value="2">
+
+ 				<label for="mar_statusdivorciado">Divorced</label>
+ 				<input type="radio" name="Soltero" id="mar_statusdivorciado" value="2">
+
+ 				<label for="mar_statusviudo">Widower</label>
+ 				<input type="radio" name="Soltero" id="mar_statusviudo" value="2">
+ 			</td>
+ 		
+
+ 		<tr>
+ 			<td align="right"><label><p>Direction</p></label></td>
+ 			<td>
+ 				<textarea name="direction" id="directionform" cols="30" rows="5"></textarea><br>
+ 				<small>Enter your Direction</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Email</p></label></td>
+ 			<td>
+ 				<input type="Email" name="youremail" id="your_email" title="Enter Your Email" required="required" placeholder="Enter your Email"><br>
+ 				<small>Enter your Email</small>
+ 			</td>
+
+ 		</tr>
+
+        <td align="right"><label><p>Telephone Number</p></label></td>
+        <td>
+        	<input type="text" name="numberphone" id="n_phone" required="required" placeholder="Enter your Telephone Number" title="Enter your Telephone Number"><br>
+        	<small>Enter your Telephone Number</small>
+        </td>
+
+        <tr bgcolor="blue" align="left"><th colspan="2" class="jeje">2.Educational Training</th></tr>
+
+        <td align="right"><label><p>Academic Actual Status</p></label></td>
+ 			<td>
+ 				<label for="mar_statusstu">Studying</label>
+ 				<input type="radio" checked name="carrer" id="mar_statusstu" value="2">
+
+ 				<label for="mar_statuswith">Without Studying</label>
+ 				<input type="radio" name="carrer" id="mar_statuswith" value="2">
+
+ 			</td>
+
+ 			
+
+ 			<tr>
+ 			<td align="right"><label><p>Primary School</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="first_school" id="first_school" required="required" placeholder="Enter your Primary School" title="Enter your Primary School" size="50"><br>
+ 				<small>Enter your Primary School</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Secundary School</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="secundary_school" id="secundary_school" required="required" placeholder="Enter your Secundary School" title="Enter your Secundary School" size="50"><br>
+ 				<small>Enter your Secundary School</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Preparatory School</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="prepa_school" id="prepa_school" required="required" placeholder="Enter your Preparatory School" title="Enter your Preparatory School" size="50"><br>
+ 				<small>Enter your Preparatory School</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>University</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="u_school" id="u_school" required="required" placeholder="Enter your University" title="Enter your University" size="50"><br>
+ 				<small>Enter your University (If you aren't in a university, put "Neither")</small>
+                <input type="button" name="add2" id="add2" value="ADD OTHER UNIVERSITY" style="background-color:#AFF014">
+ 			</td>
+            <tr>
+            <td align="right" colspan="2"> 
+            <table id="otros_campos2">  
+            </table>
+            </td>
+    </tr>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Courses</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="c_school" id="c_school" required="required" placeholder="Enter your Courses" title="Enter your Curses" size="50"><br>
+ 				<small>Enter your Curses (If you aren't in a courses, put "Neither")</small>
+                <input type="button" name="add" id="add" value="ADD OTHER COURSES" style="background-color:#AFF014">
+ 			</td>
+
+            <tr>
+            <td align="right" colspan="2"> 
+            <table id="otros_campos">  
+            </table>
+            </td>
+    </tr>
+
+ 		</tr>
+
+        <td align="right"><label><p>You're on wich level</p></label></td>
+ 			<td>
+ 				<label for="mar_statuspri">Primary</label>
+ 				<input type="radio" checked name="carrer1" id="mar_statuspri" value="2">
+
+ 				<label for="mar_statussecu">Secundary</label>
+ 				<input type="radio" name="carrer1" id="mar_statussecu" value="2">
+
+ 				<label for="mar_statuspre">Preparatory</label>
+ 				<input type="radio" name="carrer1" id="mar_statuspre" value="2">
+
+ 				<label for="mar_statusuni">University</label>
+ 				<input type="radio" name="carrer1" id="mar_statusuni" value="2">
+
+ 			</td>
+
+ 			<tr bgcolor="blue" align="left"><th colspan="2" class="jeje">3.Laboral History</th></tr>
+            
+            <tr>
+ 			<td align="right"><label><p>You working actually</p></label></td>
+
+ 		
+ 			<td>
+ 		<select name="working" id="working" title="Select your option">
+ 			<option value="Y" title="yes">Yes</option>
+ 			<option value="N" title="no">No</option>
+ 		</select>
+ 		
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>If you're working, where working?</p></label></td>
+ 			<td>
+ 				<textarea name="direction" id="directionform" cols="30" rows="5"></textarea><br>
+ 				<small>Enter where you working (If you aren´t working, put "Neither")</small>
+ 			</td>
+ 		</tr>
+        <tr>
+ 			<td align="right"><label><p>Where has been working before? </p></label></td>
+ 			<td>
+ 				<textarea name="direction" id="directionform" cols="30" rows="5"></textarea><br>
+ 				<small>Enter where you working (If you has been not working, put "Neither")</small>
+                <input type="button" name="add1" id="add1" value="ADD OTHER WORK" style="background-color:#AFF014">
+ 			</td>
+            <tr>
+            <td align="right" colspan="2"> 
+            <table id="otros_campos1">  
+            </table>
+            </td>
+    </tr>
+ 		</tr>
+
+       <tr bgcolor="blue" align="left"><th colspan="2" class="jeje">4.Personal Reference</th></tr>
+
+       <tr>
+ 			<td align="right"><label><p>First Name</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="name1" id="name1" required="required" placeholder="Enter first name" title="Enter first name" size="50"><br>
+ 				<small>Enter first name</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Last Name</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="name2" id="name2" required="required" placeholder="Enter last name" title="Enter first name" size="50"><br>
+ 				<small>Enter last name</small>
+ 			</td>
+ 		</tr>
+            
+        <tr>
+ 			<td align="right"><label><p>DNI</p></label></td>
+
+ 		
+ 			<td>
+ 		<select name="Nationality" id="Nationality" title="Select Nationality">
+ 			<option value="V" title="Venezolano">V</option>
+ 			<option value="E" title="Extranjero">E</option>
+ 			<option value="J" title="Juridico">J</option>
+ 			<option value="G" title="Gubernamental">G</option>
+ 		</select>
+ 		<input type="number" name="dni1" id="dni1" title="Enter DNI" required="required" placeholder="Ex:12000000">
+ 		</tr>
+
+ 		<td align="right"><label><p>Telephone Number</p></label></td>
+        <td>
+        	<input type="text" name="number1phone" id="n1_phone" required="required" placeholder="Enter Telephone Number" title="Enter Telephone Number"><br>
+        	<small>Enter Telephone Number</small>
+        </td>
+
+ 		<tr>
+ 			<td align="right"><label><p>Email</p></label></td>
+ 			<td>
+ 				<input type="Email" name="youremail1" id="your_email1" title="Enter Email" required="required" placeholder="Enter Email"><br>
+ 				<small>Enter Email</small>
+                <input type="button" name="add3" id="add3" value="ADD OTHER PERSONAL REFERENCE" style="background-color:#AFF014">
+ 			</td>
+            <tr>
+            <td align="right" colspan="2"> 
+            <table id="otros_campos3">  
+            </table>
+            </td>
+    </tr>
+ 		</tr>
+
+
+ 		<tr bgcolor="black" align="left"><th colspan="2" class="jeje">Classmate: Abimael Moreno - DNI: 27.712.812 - Section: 1 - Trayect: II - Group: 1</th></tr> 
+ 		
+ 	   </tr>
+
+
+ </table>
+</form>
+</body>
+</html>	
+
+ <script type="text/javascript"> 
+
+   var i=1;
+   $("#add").on('click',function(event){
+    $("#otros_campos").append('<tr id="f1'+i+'"><td align="right"><label><p>Courses</p></label></td><td align="left"><input type="text" name="c_school" id="c_school" required="required" placeholder="Enter your Courses" title="Enter your Courses" size="50"><br><small>Enter your Courses (If you arent in a courses, put "Neither")</small><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="eliminar_campos('+i+')"></td></tr>');
+        i++;
+    });
+   
+   function eliminar_campos(i){
+        var nombre_f1="#f1";
+        var num="";
+        //---
+        var num_f1=i;
+        num=num_f1.toString();
+        var f1=nombre_f1.concat(num);
+        $(""+f1+"").empty();
+
+        
+    };
+
+ </script>
+
+ <script type="text/javascript"> 
+
+   var k=1;
+   $("#add1").on('click',function(event){
+    $("#otros_campos1").append('<tr id="f2'+k+'"><td align="right"><label><p>Where has been working before? </p></label></td><td><textarea name="direction" id="directionform" cols="30" rows="5"></textarea><br><small>Enter where you working (If you has been not working, put "Neither")</small><input type="button" name="delete1"  style="background-color:red" value="DELETE" onclick="eliminar_campos1('+k+')"></td></tr>');
+        k++;
+    });
+   
+   function eliminar_campos1(k){
+        var nombre_f2="#f2";
+        var num="";
+        //---
+        var num_f2=k;
+        num=num_f2.toString();
+        var f2=nombre_f2.concat(num);
+        $(""+f2+"").empty();
+
+        
+    };
+
+ </script>
+
+<script type="text/javascript"> 
+
+   var j=1;
+   $("#add2").on('click',function(event){
+    $("#otros_campos2").append('<tr id="f3'+j+'"><td align="right"><label><p>University</p></label></td><td align="left"><input type="text" name="u_school" id="u_school" required="required" placeholder="Enter your University" title="Enter your University" size="50"><br><small>Enter your University (If you arent in a university, put "Neither")</small><input type="button" name="delete2"  style="background-color:red" value="DELETE" onclick="eliminar_campos2('+j+')"></td></tr>');
+        j++;
+    });
+   
+   function eliminar_campos2(j){
+        var nombre_f3="#f3";
+        var num="";
+        //---
+        var num_f3=j;
+        num=num_f3.toString();
+        var f3=nombre_f3.concat(num);
+        $(""+f3+"").empty();
+
+        
+    };
+
+ </script>
+
+ <script type="text/javascript"> 
+
+   var s=1;
+   $("#add3").on('click',function(event){
+    $("#otros_campos3").append('<tr id="f4'+s+'"><td align="right"><label><p>First Name</p></label></td><td align="left"><input type="text" name="name1" id="name1" required="required" placeholder="Enter first name" title="Enter first name" size="50"><br><small>Enter first name</small></td></tr><tr id="f5'+s+'"><td align="right"><label><p>Last Name</p></label></td><td align="left"><input type="text" name="name2" id="name2" required="required" placeholder="Enter last name" title="Enter first name" size="50"><br><small>Enter last name</small></td></tr><tr id="f6'+s+'"><td align="right"><label><p>DNI</p></label></td>td><select name="Nationality" id="Nationality" title="Select Nationality"><option value="V" title="Venezolano">V</option><option value="E" title="Extranjero">E</option><option value="J" title="Juridico">J</option><option value="G" title="Gubernamental">G</option></select><input type="number" name="dni1" id="dni1" title="Enter DNI" required="required" placeholder="Ex:12000000"></tr><tr id="f8'+s+'"><td align="right"><label><p>Telephone Number</p></label></td><td><input type="text" name="number1phone" id="n1_phone" required="required" placeholder="Enter Telephone Number" title="Enter Telephone Number"><br><small>Enter Telephone Number</small></td></tr><tr id="f7'+s+'"><td align="right"><label><p>Email</p></label></td><td><input type="Email" name="youremail1" id="your_email1" title="Enter Email" required="required" placeholder="Enter Email"><br><small>Enter Email</small><input type="button" name="delete3"  style="background-color:red" value="DELETE" onclick="eliminar_campos3('+s+')"></td></tr>');
+        s++;
+    });
+   
+   function eliminar_campos3(s){
+        var nombre_f4="#f4";
+        var num="";
+        var nombre_f5="#f5";
+        var num="";
+        var nombre_f6="#f6";
+        var num="";
+        var nombre_f7="#f7";
+        var num="";
+        var nombre_f8="#f8";
+        var num="";
+        //
+        var num_f4=s;
+        num=num_f4.toString();
+        var f4=nombre_f4.concat(num);
+        $(""+f4+"").empty();
+        //
+        var num_f5=s;
+        num=num_f5.toString();
+        var f5=nombre_f5.concat(num);
+        $(""+f5+"").empty();
+        //
+        var num_f6=s;
+        num=num_f6.toString();
+        var f6=nombre_f6.concat(num);
+        $(""+f6+"").empty();
+        //
+        var num_f7=s;
+        num=num_f7.toString();
+        var f7=nombre_f7.concat(num);
+        $(""+f7+"").empty();
+        //
+        var num_f8=s;
+        num=num_f8.toString();
+        var f8=nombre_f8.concat(num);
+        $(""+f8+"").empty();
+    };
+
+ </script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="granoscss.css">
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<title>Granos</title>
+</head>
+<body>
+<form action="recibir_formulario.php" method="post" name="formulario">
+ <center><h1 class="hi">Granos (Legumbres)</h1></center>
+ <form action="#" method="post" name="my_form">
+ <table width="100%">
+
+ 		<tr bgcolor="green" align="left"><th colspan="2" class="hi">Inserte sus granos</th></tr>
+ 		<tr>
+ 			<td align="right"><label><p>Nombre</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="nombre" id="nombre" required="required" placeholder="Ingrese el nombre de la legumbre" title="Ingrese el nombre de la lengumbre" size="50"><br>
+ 				<small>Ingrese el nombre de la lengumbre</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Apodo</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="apodo" id="apodo" required="required" placeholder="Ingrese el apodo de la legumbre" title="Ingrese el apodo de la lengumbre" size="50"><br>
+ 				<small>Ingrese el apodo de la lengumbre</small>
+ 				<input type="button" name="add" id="add" value="AGREGAR OTRO APODO" style="background-color:#AFF014">
+ 			</td>
+ 			<td align="right" colspan="2"> 
+            <table id="otros_campos">  
+            </table>
+            </td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Especie</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="especie" id="especie" required="required" placeholder="Ingrese la especie de la legumbre" title="Ingrese la especie de la lengumbre" size="50"><br>
+ 				<small>Ingrese la especie de la lengumbre</small>
+ 			</td>
+ 		</tr>
+
+ 		<tr>
+ 			<td align="right"><label><p>Caracteristicas</p></label></td>
+ 			<td align="left">
+
+ 				<input type="text" name="carac" id="carac" required="required" placeholder="Ingrese las caracteristicas de la legumbre" title="Ingrese las caracteristicas de la legumbre" size="50"><br>
+ 				<small>Ingrese las caracteristicas de la legumbre</small>
+ 				<input type="button" name="add1" id="add1" value="AGREGAR OTRA CARACTERISTCA" style="background-color:#AFF014">
+ 			</td>
+ 			<td align="right" colspan="2"> 
+            <table id="otros_campos1">  
+            </table>
+            </td>
+ 		</tr>
+
+ 		<tr>
+         <td><input type="submit" name="send" value="SEND"></td>
+     </tr>
+
+</body>
+</html>
+
+<script type="text/javascript"> 
+
+   var i=1;
+   $("#add").on('click',function(event){
+    $("#otros_campos").append('<tr id="f1'+i+'"><td align="right"><label><p>Apodo</p></label></td><td align="left"><input type="text" name="apodo" id="apodo" required="required" placeholder="Ingrese el apodo de la legumbre" title="Ingrese el apodo de la lengumbre" size="50"><br><small>Ingrese el apodo de la lengumbre</small><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="eliminar_campos('+i+')"></td></tr>');
+        i++;
+    });
+   
+   function eliminar_campos(i){
+        var nombre_f1="#f1";
+        var num="";
+        //---
+        var num_f1=i;
+        num=num_f1.toString();
+        var f1=nombre_f1.concat(num);
+        $(""+f1+"").empty();
+
+        
+    };
+
+ </script>
+
+ <script type="text/javascript"> 
+
+   var p=1;
+   $("#add1").on('click',function(event){
+    $("#otros_campos1").append('<tr id="f2'+p+'"><td align="right"><label><p>Caracteristicas</p></label></td><td align="left"><input type="text" name="carac" id="carac" required="required" placeholder="Ingrese las caracteristicas de la legumbre" title="Ingrese las caracteristicas de la legumbre" size="50"><br><small>Ingrese las caracteristicas de la legumbre</small><input type="button" name="delete"  style="background-color:red" value="DELETE" onclick="eliminar_campos1('+p+')"></td></tr>');
+        p++;
+    });
+   
+   function eliminar_campos1(p){
+        var nombre_f2="#f2";
+        var num="";
+        //---
+        var num_f2=p;
+        num=num_f2.toString();
+        var f2=nombre_f2.concat(num);
+        $(""+f2+"").empty();
+
+        
+    };
+
+ </script>

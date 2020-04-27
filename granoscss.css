@@ -1,0 +1,17 @@
+body{
+		    height: 100%;
+			background-image: url('bg.jpg');
+			background-size: 100%;
+
+		}
+
+		table td p{
+			font-weight: bold;
+		}
+		table tr td p{
+			font-weight: bold;
+		}
+
+.hi{
+	color: white;
+}
